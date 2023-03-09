@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-vkff
+  namespace: smarlow1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:ad0b4f9d56a5a8a2be98c68ecf40b9954c3e34ef2700884ef51d795cd010107f
+        name: my-java-quarkus
+        resources: {}
+status: {}
